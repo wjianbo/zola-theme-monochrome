@@ -88,6 +88,11 @@ ul li::marker {
   text-align-last: start !important;
 }
 
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
