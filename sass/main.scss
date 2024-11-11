@@ -4,6 +4,8 @@
   --lead: #4b5563;
   --links: #111827;
   --bullets: #d1d5db;
+  --quotes: #111827;
+  --quote-borders: #e5e7eb;
 }
 
 html {
@@ -73,7 +75,7 @@ ul {
 ul li {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  padding-left: .375em;
+  padding-left: 0.375em;
 }
 
 ul li::marker {
@@ -89,15 +91,31 @@ ul li::marker {
   text-align-last: start !important;
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
   height: auto;
   margin-top: 2em;
   margin-bottom: 2em;
 }
 
-img, svg, video, canvas, audio, iframe, embed, object {
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
   display: block;
+}
+
+blockquote {
+  font-weight: 500;
+  font-style: italic;
+  border-left: solid 0.25rem var(--quote-borders);
+  padding-left: 1em;
+  margin: 0;
 }
 
 .px-2 {
