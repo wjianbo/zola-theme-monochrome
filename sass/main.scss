@@ -92,6 +92,12 @@ ul li::marker {
 img, video {
   max-width: 100%;
   height: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
 }
 
 .px-2 {
