@@ -60,8 +60,9 @@ p {
 
 a {
   color: var(--links);
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 500;
+  border-bottom: 1px dashed;
 }
 
 ul {
