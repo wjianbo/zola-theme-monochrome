@@ -12,6 +12,8 @@ demo = ""
 # be merged with user data, some kind of prefix or nesting is preferable
 # Use snake_casing to be consistent with the rest of Zola
 [extra]
+# Google Font API mirror URLs (for China mainland users, try fonts.loli.net)
+monochrome_font_mirror = "fonts.googleapis.com"
 
 # The theme author info: you!
 [author]
