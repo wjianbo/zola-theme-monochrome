@@ -1,0 +1,18 @@
+@font-face {
+  font-family: kai sc;
+  src: local("Kaiti"), local("Kaiti SC"), local("STKaiti"), local("楷体"),
+    local("SimKai"), local("AR PL KaitiM GB"), local("DFKai-SB"),
+    local("FandolKai"),
+    url(https://cdn.jsdelivr.net/gh/yihui/cron/fonts/gkai00mp-yihui.woff2)
+      format("woff2");
+}
+
+body {
+  font-family: "Linden Hill", "Source Serif Pro", "Source Han Serif SC",
+    "Noto Serif CJK SC", "Noto Serif SC", serif;
+}
+
+blockquote {
+  font-family: "Linden Hill", kai sc, serif;
+  font-style: normal;
+}
