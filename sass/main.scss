@@ -118,6 +118,17 @@ blockquote {
   margin: 0;
 }
 
+pre {
+  overflow-x: auto;
+  font-weight: 400;
+  font-size: .875em;
+  line-height: 1.7142857;
+  margin-top: 1.7142857em;
+  margin-bottom: 1.7142857em;
+  border-radius: .375rem;
+  padding: .8571429em 1.1428571em;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
