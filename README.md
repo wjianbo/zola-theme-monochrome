@@ -5,7 +5,7 @@ Demo 页面还没有做，效果参考[作者博客](https://wjianbo.github.io)�
 
 ## 安装
 
-确保使用 `zola init myblog` 创建了你的 zola 博客文件夹，然后将本主题添加到本地 `themes` 文件下：
+确保使用 `zola init myblog` 创建了你的 [zola](https://www.getzola.org/) 博客文件夹，然后将本主题添加到本地 `themes` 文件下：
 
 ```
 git submodule add https://github.com/wjianbo/zola-theme-monochrome themes/monochrome
