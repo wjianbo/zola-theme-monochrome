@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ lang }}">
+<html lang="{{ config.extra.lang }}">
     <head>
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -12,7 +12,7 @@
 
       <!-- CSS -->
       <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) }}">
-      {% if lang == "zh-CN" %}
+      {% if config.extra.lang == "zh-CN" %}
       {% set font_base_url = config.extra.monochrome_font_mirror | default(value="fonts.googleapis.com") %}
       <link rel="stylesheet" href="https://{{ font_base_url }}/css2?family=Linden+Hill:ital@0;1&family=Noto+Serif+SC:wght@400..800&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="{{ get_url(path="font.css", trailing_slash=false) }}">
