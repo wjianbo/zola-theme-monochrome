@@ -10,5 +10,8 @@
   {% if page.title %}
   <h1 class="pt-6">{{ page.title }}</h1>
   {% endif %}
+  {% if page.date %}
+  <p>{{ page.date }}</h1>
+  {% endif %}
   {{ page.content | safe }}
 {% endblock content %}
