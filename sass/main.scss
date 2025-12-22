@@ -1,11 +1,22 @@
 :root {
-  --body: #374151;
-  --headings: #111827;
-  --lead: #4b5563;
-  --links: #111827;
-  --bullets: #d1d5db;
-  --quotes: #111827;
-  --quote-borders: #e5e7eb;
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #777777;
+  --border: #e5e5e5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f0f0f;
+    --text: #eaeaea;
+    --muted: #9a9a9a;
+    --border: #2a2a2a;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
 }
 
 html {
@@ -69,7 +80,8 @@ a {
 }
 
 a:hover {
-  border-bottom-color: #666;
+  color: #4a6fa5; /* 极低饱和蓝 */
+  border-bottom-color: #4a6fa5;
 }
 
 
@@ -162,4 +174,72 @@ pre {
 
 .pb-20 {
   padding-bottom: 5rem;
+}
+
+.post-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.5rem;
+}
+
+.post-list li {
+  margin: 0.6rem 0;
+}
+
+.post-date {
+  margin-left: 0.5rem;
+  color: #999;
+  font-size: 0.85em;
+}
+
+
+.post {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 4rem 1.2rem;
+}
+
+.post-title {
+  font-size: 2.2rem;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 3rem;
+}
+
+.post-content {
+  line-height: 1.8;
+}
+
+.post-footer {
+  margin-top: 4rem;
+}
+
+.post-author {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.post-back {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.post-back a {
+  color: #999;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.post-back a:hover {
+  color: #555;
+}
+
+// section
+.section-intro {
+  margin: 2rem 0 3rem;
 }

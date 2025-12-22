@@ -1,34 +1,32 @@
 {% extends "base.html" %}
-{% block extra_head %}
-  <link rel="stylesheet" href="{{ get_url(path="section.css", trailing_slash=false) }}">
-{% endblock extra_head %}
 
 {% block content %}
-<a href="/">Home</a>
-<h1 class="title">{{ section.title }}</h1>
 
-<article>{{ section.content | safe }}</article>
+<div class="post-back">
+  <a href="../">←</a>
+</div>
 
-{% for year, posts in section.pages | group_by(attribute="year") %}
-<h2 class="archive-year">{{ year }}</h2>
-<ul class="posts flat">
-  {% for post in posts %}
-  <li class="post">
-    <div class="post-header">
-      <div class="meta">
-        <div class="date">
-          <span class="day">{{ post.day }}</span>
-          <span class="rest">{{ post.date | date(format='%b') }}</span>
-        </div>
-      </div>
-      <div class="matter">
-        <div class="title small">
-          <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
-          {% if post.draft %}<span class="draft">(Draft)</span>{% endif %}
-        </div>
-      </div>
-    </div>
+<h1>{{ section.title }}</h1>
+
+{% if section.content %}
+<article class="section-intro">
+  {{ section.content | safe }}
+</article>
+{% endif %}
+
+<ul class="post-list">
+  {% for post in section.pages %}
+  <li>
+    <a href="{{ post.permalink }}">{{ post.title }}</a>
+    {% if post.date %}
+    <span class="post-date">{{ post.date }}</span>
+    {% endif %}
   </li>
   {% endfor %}
 </ul>
-{% endfor %} {% endblock content %}
+
+<div class="post-back">
+  <a href="../">←</a>
+</div>
+
+{% endblock content %}
