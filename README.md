@@ -1,26 +1,71 @@
-# zola-theme-monochrome
-A chinese friendly zola theme.
+# zola-theme-still
 
-Demo 页面还没有做，效果参考[作者博客](https://wjianbo.github.io)。
+**Still** is a minimal Zola theme focused on calm reading, typography, and intentional silence.
 
-## 安装
+No visual noise.
+No unnecessary navigation.
+Just words, spacing, and time.
 
-确保使用 `zola init myblog` 创建了你的 [zola](https://www.getzola.org/) 博客文件夹，然后将本主题添加到本地 `themes` 文件下：
+This theme is designed for personal blogs, essays, and long-form writing.
 
+A live demo is not available yet.
+You can preview the visual style on the author’s blog:
+[https://wjianbo.github.io](https://wjianbo.github.io)
+
+---
+
+## Features
+
+* Clean, monochrome design
+* Focused reading experience
+* No homepage navigation by default
+* Designed for internal linking between posts
+* Suitable for long-form writing
+
+---
+
+## Installation
+
+Make sure you have created a Zola site:
+
+```bash
+zola init myblog
+cd myblog
 ```
-git submodule add https://github.com/wjianbo/zola-theme-monochrome themes/monochrome
+
+Then add the theme to the `themes` directory.
+
+Using git submodule:
+
+```bash
+git submodule add https://github.com/wjianbo/zola-theme-still themes/still
 ```
 
-或者
+Or clone directly:
 
-```
-git clone https://github.com/wjianbo/zola-theme-monochrome themes/monochrome
+```bash
+git clone https://github.com/wjianbo/zola-theme-still themes/still
 ```
 
-之后修改 `config.toml` 文件：
+---
 
-```
-theme = "monochrome"
-default_language = "zh-CN"
+## Configuration
+
+Edit `config.toml` and set the theme:
+
+```toml
+theme = "still"
 build_search_index = false
 ```
+
+---
+
+## Philosophy
+
+Still is not about *less features*,
+but about *less distraction*.
+
+Each page should feel complete on its own,
+yet quietly connected to others through links.
+
+Reading should feel slow.
